@@ -1,7 +1,10 @@
 #import "IPCustomFontLabel.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface IPCustomFontLabel ()
 @property (copy, nonatomic) NSString *fontFamily;
+@property (strong, nonatomic) UIColor *shadowColor;
+@property (nonatomic) CGSize shadowOffset;
 @end
 
 @implementation IPCustomFontLabel
@@ -27,6 +30,14 @@
             NSLog(@"Warning: Could not instantiate UIFont with family %@ for %@", self.fontFamily, [self description]);
 #endif
         }
+    }
+    
+    if (self.shadowColor) {
+        self.layer.shadowColor  = [self.shadowColor CGColor];
+    }
+    
+    if (!CGSizeEqualToSize(self.shadowOffset, CGSizeZero)) {
+        self.layer.shadowOffset = self.shadowOffset;
     }
 }
 
