@@ -20,6 +20,8 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     if (self.fontFamily && self.font) {
         CGFloat fontSize = self.font.pointSize;
         UIFont *font = [UIFont fontWithName:self.fontFamily size:fontSize];
