@@ -13,6 +13,7 @@
 
 ##Available properties:
 
-|keyPath       |type        |value                                   |
-|--------------|------------|----------------------------------------|
-|`fontFamily`  |String      |The desired PostScript font family name |
+
+| keyPath        | type         | value                                    |
+| -------------- | ------------ | ---------------------------------------- |
+| `fontFamily`   | String       | The desired PostScript font family name  |
