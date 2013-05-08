@@ -23,7 +23,9 @@
         if (font) {
             self.font = font;
         } else {
+#if DEBUG
             NSLog(@"Warning: Could not instantiate UIFont with family %@ for %@", self.fontFamily, [self description]);
+#endif
         }
     }
 }
