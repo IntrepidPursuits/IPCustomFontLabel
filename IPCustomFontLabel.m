@@ -22,9 +22,8 @@
 {
     [super awakeFromNib];
     
-    if (self.fontFamily && self.font) {
-        CGFloat fontSize = self.font.pointSize;
-        UIFont *font = [UIFont fontWithName:self.fontFamily size:fontSize];
+    if (self.fontFamily) {
+        UIFont *font = [UIFont fontWithName:self.fontFamily size:self.font.pointSize];
         if (font) {
             self.font = font;
         } else {
