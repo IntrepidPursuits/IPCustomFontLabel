@@ -18,4 +18,4 @@
 | -------------- | ------------ | ---------------------------------------- |
 | `fontFamily`   | String       | The desired PostScript font family name  |
 | `shadowColor`  | Color        | Color of text shadow                     |
-| `shadowOffset  | Size         | Offset of the text shadow                |
+| `shadowOffset` | Size         | Offset of the text shadow                |
